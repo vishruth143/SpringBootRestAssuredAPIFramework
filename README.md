@@ -15,9 +15,6 @@ SpringBootRestAssuredAPIFramework/
 │   │   │   └── com/
 │   │   │       └── ea/
 │   │   │           └── SpringBootSeleniumFramework
-│   │   │               └── extensions/
-│   │   │               └── libraries/
-│   │   │               └── utils/ 
 │   │   │               └── SpringBootSeleniumFrameworkApplication.java
 │   │   └── resources/
 │   │       ├── application.properties
@@ -29,11 +26,13 @@ SpringBootRestAssuredAPIFramework/
 │           │   └── ea/
 │           │        └── SpringBootSeleniumFramework/
 │           │            │└── features
+│           │            │├── UserAPI.feature 
 │           │            └── runner/
 │           │            │   ├── TestRunner.java  
 │           │            └── steps/
 │           │            │   ├── CucumberTestContextConfig.java 
 │           │            │   ├── Hooks.java 
+│           │            │   ├── UserAPISteps.java
 │           └── resources/
 │               │──testng.xml
 ├── pom.xml
@@ -99,7 +98,7 @@ SpringBootRestAssuredAPIFramework/
 ## Acknowledgments
 
 - Spring Boot
-- Selenium WebDriver
+- REST Assured
 - Cucumber
 - Maven
-- JUnit/TestNG
+- TestNG
