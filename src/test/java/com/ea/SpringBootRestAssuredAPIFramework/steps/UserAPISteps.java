@@ -1,4 +1,4 @@
-package com.ea.SpringBootSeleniumFramework.steps;
+package com.ea.SpringBootRestAssuredAPIFramework.steps;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -7,7 +7,7 @@ import io.cucumber.java.en.Then;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 
-import static com.ea.SpringBootSeleniumFramework.steps.Hooks.requestSpec;
+import static com.ea.SpringBootRestAssuredAPIFramework.steps.Hooks.requestSpec;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 

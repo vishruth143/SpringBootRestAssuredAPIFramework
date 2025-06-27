@@ -1,4 +1,4 @@
-package com.ea.SpringBootSeleniumFramework.steps;
+package com.ea.SpringBootRestAssuredAPIFramework.steps;
 
 import io.cucumber.java.Before;
 import io.restassured.builder.RequestSpecBuilder;

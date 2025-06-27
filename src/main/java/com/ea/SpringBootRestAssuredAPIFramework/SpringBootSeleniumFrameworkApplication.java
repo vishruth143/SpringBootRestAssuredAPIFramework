@@ -1,4 +1,4 @@
-package com.ea.SpringBootSeleniumFramework;
+package com.ea.SpringBootRestAssuredAPIFramework;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

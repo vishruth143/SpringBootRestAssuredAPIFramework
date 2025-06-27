@@ -1,4 +1,4 @@
-package com.ea.SpringBootSeleniumFramework.runner;
+package com.ea.SpringBootRestAssuredAPIFramework.runner;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;

@@ -4,7 +4,7 @@
     <test name="Demo Spring Boot Selenium Test">
 
         <classes>
-            <class name="com.ea.SpringBootSeleniumFramework.runner.TestRunner"></class>
+            <class name="com.ea.SpringBootRestAssuredAPIFramework.runner.TestRunner"></class>
         </classes>
 
     </test>
