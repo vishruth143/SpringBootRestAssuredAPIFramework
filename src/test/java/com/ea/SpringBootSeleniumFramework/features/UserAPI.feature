@@ -6,12 +6,6 @@ Feature: Reqres User API Testing
     And the response should contain "Janet"
 
   Scenario: Create a new user
-    When I send a POST request to "/api/users" with body:
-      """
-      {
-        "name": "morpheus",
-        "job": "leader"
-      }
-      """
+    When I send a POST request to "/api/users" with body from file "create_user.json"
     Then the response status code should be 201
     And the response should contain "morpheus"
