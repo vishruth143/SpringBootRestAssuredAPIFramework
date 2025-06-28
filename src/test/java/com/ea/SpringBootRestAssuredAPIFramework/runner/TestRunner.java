@@ -4,8 +4,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = {"src/test/java/com/ea/SpringBootSeleniumFramework/features"},
-        glue = "com.ea.SpringBootSeleniumFramework.steps",
+        features = {"src/test/java/com/ea/SpringBootRestAssuredAPIFramework/features"},
+        glue = "com.ea.SpringBootRestAssuredAPIFramework.steps",
         plugin = {
             "pretty",                                          // ✅ Console readable format
             "json:target/cucumber-reports/cucumber.json",      // ✅ JSON for advanced reporting if needed

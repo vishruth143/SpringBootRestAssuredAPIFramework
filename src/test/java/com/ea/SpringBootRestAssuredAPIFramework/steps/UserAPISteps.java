@@ -1,5 +1,7 @@
 package com.ea.SpringBootRestAssuredAPIFramework.steps;
 
+import com.ea.SpringBootRestAssuredAPIFramework.util.ConfigParser;
+import com.fasterxml.jackson.databind.JsonNode;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.cucumber.java.en.When;
@@ -30,12 +32,18 @@ public class UserAPISteps {
                 .get(endpoint);
     }
 
-    @When("I send a POST request to {string} with body:")
-    public void iSendAPOSTRequestToWithBody(String endpoint, String body) {
+    @When("I send a POST request to {string} using payload for {string}")
+    public void iSendAPOSTRequestToUsingPayloadFor(String endpoint, String scenarioName) {
+        JsonNode payload = ConfigParser.loadJson("api_test_data_config").get(scenarioName);
+
+        if (payload == null) {
+            throw new RuntimeException("Payload not found for scenario: " + scenarioName);
+        }
+
         response = RestAssured
                 .given()
                 .spec(requestSpec)
-                .body(body)
+                .body(payload.toString())
                 .when()
                 .post(endpoint);
     }
