@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootSeleniumFrameworkApplication {
+public class SpringBootRestAssuredAPIFrameworkApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootSeleniumFrameworkApplication.class, args);
+		SpringApplication.run(SpringBootRestAssuredAPIFrameworkApplication.class, args);
 	}
 
 }

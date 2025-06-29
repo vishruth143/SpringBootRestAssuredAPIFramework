@@ -1,6 +1,6 @@
-# Spring Boot Selenium API Framework
+# Spring Boot RestAssured API Framework
 
-This project is a test automation framework that combines Spring Boot with Selenium WebDriver, designed to provide a robust and scalable solution for web application testing.
+This project is a test automation framework that combines Spring Boot with Rest Assured, designed to provide a robust and scalable solution for API testing.
 
 ## Project Structure
 
@@ -14,8 +14,8 @@ SpringBootRestAssuredAPIFramework/
 │   │   ├── java/
 │   │   │   └── com/
 │   │   │       └── ea/
-│   │   │           └── SpringBootSeleniumFramework
-│   │   │               └── SpringBootSeleniumFrameworkApplication.java
+│   │   │           └── SpringBootRestAssuredAPIFramework
+│   │   │               └── SpringBootRestAssuredAPIFrameworkApplication.java
 │   │   └── resources/
 │   │       ├── application.properties
 │   │       ├── application-qa.properties
@@ -34,6 +34,8 @@ SpringBootRestAssuredAPIFramework/
 │           │            │   ├── Hooks.java 
 │           │            │   ├── UserAPISteps.java
 │           └── resources/
+│           │   └── config/
+│           │       ├── payload.json
 │               │──testng.xml
 ├── pom.xml
 ├── mvnw
@@ -60,12 +62,12 @@ SpringBootRestAssuredAPIFramework/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/vishruth143/SpringBootSeleniumFramework.git
+   git clone https://github.com/vishruth143/SpringBootRestAssuredAPIFramework.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd SpringBootSeleniumFramework
+   cd SpringBootRestAssuredAPIFramework
    ```
 
 3. Build the project:
