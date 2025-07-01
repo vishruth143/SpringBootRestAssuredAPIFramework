@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 @CucumberOptions(
         features = {"src/test/java/com/ea/SpringBootRestAssuredAPIFramework/features"},
         glue = "com.ea.SpringBootRestAssuredAPIFramework.steps",
+        tags = "@smoke or @regression",
         plugin = {
             "pretty",                                          // ✅ Console readable format
             "json:target/cucumber-reports/cucumber.json",      // ✅ JSON for advanced reporting if needed
